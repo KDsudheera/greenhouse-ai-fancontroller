@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "author": "ZFrozen Greenhouse Controller",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht22",
+      "top": -67.2,
+      "left": 191.4,
+      "attrs": {
+        "temperature": "28.5",
+        "humidity": "65.2"
+      }
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay1",
+      "top": 86.4,
+      "left": 288,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 134.4,
+      "left": 460.8,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 134.4,
+      "left": 403.2,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 172.8,
+      "left": 451.2,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 172.8,
+      "left": 393.6,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:D2", "dht22:SDA", "green", [ "h19.2", "v-48" ] ],
+    [ "esp:3V3", "dht22:VCC", "red", [ "h28.8", "v-76.8", "h134.4" ] ],
+    [ "esp:GND.1", "dht22:GND", "black", [ "h9.6", "v-86.4", "h163.2" ] ],
+    [ "esp:D4", "relay1:IN", "blue", [ "h38.4", "v67.2", "h230.4" ] ],
+    [ "esp:5V", "relay1:VCC", "red", [ "h48", "v76.8", "h211.2" ] ],
+    [ "esp:GND.2", "relay1:GND", "black", [ "h57.6", "v86.4", "h192" ] ],
+    [ "relay1:NO", "led1:A", "orange", [ "v19.2", "h134.4" ] ],
+    [ "relay1:COM", "led2:A", "purple", [ "v19.2", "h76.8" ] ],
+    [ "led1:C", "r1:1", "green", [ "v28.8" ] ],
+    [ "led2:C", "r2:1", "red", [ "v28.8" ] ],
+    [ "r1:2", "esp:GND.1", "black", [ "v9.6", "h-432", "v-249.6" ] ],
+    [ "r2:2", "esp:GND.1", "black", [ "v9.6", "h-374.4", "v-249.6" ] ]
+  ],
+  "dependencies": {}
+}
