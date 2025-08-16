@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "323732952127",
+    "firebase_url": "https://greenhouse-ai-fancontroller-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "greenhouse-ai-fancontroller",
+    "storage_bucket": "greenhouse-ai-fancontroller.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323732952127:android:d03901d48b0abc43e6d48a",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu_wOR83yUH3uT4qjJIqShs3Bz3-Xydvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
