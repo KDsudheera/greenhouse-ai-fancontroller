@@ -432,7 +432,7 @@ Contributions are welcome! Please:
 ## 📞 Contact & Support
 
 - **GitHub:** [@KDsudheera](https://github.com/KDsudheera)
-- **Email:** contact@zfrozen.com
+- **Email:** kusaldoranegoda99@gmail.com
 - **Project Issues:** [GitHub Issues](https://github.com/KDsudheera/greenhouse-ai-fancontroller/issues)
 
 ## 📄 License
