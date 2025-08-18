@@ -10,9 +10,8 @@
 #define WIFI_SSID "Wokwi-GUEST"
 #define WIFI_PASSWORD ""
 
-// Firebase configuration
-#define API_KEY "AIzaSyAzzLNqzIMEuVtllkRcKfsauGMGDRIuWZo"
-#define DATABASE_URL "https://greenhouse-ai-fancontroller-default-rtdb.asia-southeast1.firebasedatabase.app"
+// Firebase configuration - load from config.h
+#include "config.h"
 
 #define USER_EMAIL "test@test.com"
 #define USER_PASSWORD "test@123"

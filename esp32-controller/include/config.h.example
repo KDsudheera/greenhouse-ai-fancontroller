@@ -1,0 +1,13 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// Firebase Configuration
+// Replace with your actual Firebase project credentials
+#define API_KEY "your-firebase-api-key-here"
+#define DATABASE_URL "https://your-project-name-default-rtdb.region.firebasedatabase.app"
+
+// WiFi Configuration (optional - for physical ESP32)
+// #define WIFI_SSID "your-wifi-network"
+// #define WIFI_PASSWORD "your-wifi-password"
+
+#endif

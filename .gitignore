@@ -1,6 +1,7 @@
 # === PROJECT SPECIFIC ===
 # Configuration with sensitive data
 esp32-controller/include/config.h
+config.h
 flutter_app/lib/firebase_options.dart
 flutter_app/android/app/google-services.json
 
